@@ -1,0 +1,221 @@
+﻿:root {
+    --brand-color: #2196F3;
+    --light-font-color: #757575;
+    --dark-font-color: #212121;
+    --bg-color: #F5F4FA;
+    --footer-bg-color: #2F303A;
+}
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #ffffff;
+    color: var(--dark-font-color);
+}
+.second-title {
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/*//////////////////// header ///////////////////////*/
+.logo {
+    font-family: Raleway, sans-serif;
+    color: var(--brand-color);
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+.logo>span {
+    color: var(--dark-font-color);
+}
+
+.navigation-list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    list-style: none;
+}
+
+.navigation-list .navigation-link {
+    text-decoration: none;
+    color: #212121;
+}
+.navigation-link.active {
+    color: var(--brand-color);
+}
+.navigation-list .navigation-link:hover,
+.navigation-list .navigation-link:focus {
+    color: var(--brand-color)
+}
+.connection .connection-link {
+    color: var(--light-font-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.connection .connection-link:hover,
+.connection .connection-link:focus {
+    color: var(--brand-color);
+}
+
+/*//////////////// index - styles /////////////////////*/
+/* hero */
+.hero {
+    background-color: var(--footer-bg-color);
+    height: 600px;
+}
+.hero .title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.hero .hero-button {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: var(--brand-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+/* benefits */
+.benefits {
+    background-color: #ffffff;
+}
+.benefits h2 {
+    display: none;
+}
+.benefits .benefits-item {
+    list-style: none;
+}
+.benefits .benefits-title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+}
+.benefits .benefits-descr {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--light-font-color);
+}
+/* specifics */
+.specifics .specifics-item {
+    list-style: none;
+}
+.specifics .specifics-title {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+/* team */
+.team {
+    background-color: var(--bg-color);
+}
+.team .team-item {
+    list-style: none;
+}
+.team .team-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team .team-descr {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--light-font-color);
+}
+
+/*////////////// portfolio ///////////////////*/
+
+.works button {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--dark-font-color);
+    border: none;
+    height: 38px;
+    cursor: pointer;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+}
+.works button:hover,
+.works button:focus {
+    background-color: var(--brand-color);
+    color: #ffffff;
+}
+.works li {
+    list-style: none;
+}
+.works h3 {
+    color: var(--dark-font-color);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.works a {
+    text-decoration: none;
+}
+.works p {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: var(--light-font-color);
+}
+.works .hidden {
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background-color: var(--brand-color);
+}
+/*//////////////////////// footer ///////////////////////////*/
+.footer {
+    background-color: var(--footer-bg-color);
+    height: 252px;
+}
+.footer .address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    font-style: normal;
+}
+.footer span {
+    color: #ffffff;
+}
+.footer .footer-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
