@@ -10,14 +10,64 @@ body {
     background-color: #ffffff;
     color: var(--dark-font-color);
 }
+li {
+    list-style: none;
+}
 .second-title {
 
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+ul,
+ol {
+    padding-left: 0;
+    margin: 0;
+}
+button {
+    cursor: pointer;
+}
+img {
+    display: block;
+}
+.flex-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 /*//////////////////// header ///////////////////////*/
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.header-portfolio {
+    border-bottom: 1px solid #ECECEC;
+}
 .logo {
     font-family: Raleway, sans-serif;
     color: var(--brand-color);
@@ -31,12 +81,17 @@ body {
 }
 
 .navigation-list {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    list-style: none;
+    margin-left: 93px;
 }
+.navigation-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 
 .navigation-list .navigation-link {
     text-decoration: none;
@@ -57,6 +112,9 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+.connection-link + .connection-link {
+    margin-left: 50px;
+}
 .connection .connection-link:hover,
 .connection .connection-link:focus {
     color: var(--brand-color);
@@ -66,7 +124,9 @@ body {
 /* hero */
 .hero {
     background-color: var(--footer-bg-color);
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
 }
 .hero .title {
     font-weight: 900;
@@ -76,8 +136,12 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 30px;
+    padding-left: 237px;
+    padding-right: 237px;
 }
 .hero .hero-button {
+    display: block;
     font-family: 'Roboto', sans-serif;
     color: #fff;
     background-color: var(--brand-color);
@@ -91,23 +155,30 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 5px;
+    margin: 0 auto;
+    
 }
 /* benefits */
 .benefits {
     background-color: #ffffff;
+    
 }
 .benefits h2 {
     display: none;
+
 }
 .benefits .benefits-item {
-    list-style: none;
+    width: 270px;
+}
+.benefits-item:not(:last-child) {
+    margin-right: 30px;
 }
 .benefits .benefits-title {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    
+    margin-bottom: 10px;
 }
 .benefits .benefits-descr {
     font-size: 14px;
@@ -116,12 +187,15 @@ body {
     color: var(--light-font-color);
 }
 /* specifics */
+.specifics {
+    padding-bottom: 94px;
+}
 .specifics .specifics-item {
     list-style: none;
 }
 .specifics .specifics-title {
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -132,17 +206,24 @@ body {
 .team {
     background-color: var(--bg-color);
 }
-.team .team-item {
-    list-style: none;
+.team-item {
+    padding-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
-.team .team-title {
+.team-img {
+    margin-bottom: 30px;
+}
+.team-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
-.team .team-descr {
+.team-descr {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -152,7 +233,7 @@ body {
 
 /*////////////// portfolio ///////////////////*/
 
-.works button {
+.works-button {
     font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -166,39 +247,72 @@ body {
     background-color: var(--bg-color);
     border-radius: 5px;
 }
-.works button:hover,
-.works button:focus {
+.works-button:hover,
+.works-button:focus {
     background-color: var(--brand-color);
     color: #ffffff;
 }
-.works li {
-    list-style: none;
+.works-tabs {
+    margin-bottom: 50px;
+    justify-content: center;
 }
-.works h3 {
+.works-tab:not(:last-child) {
+    margin-right: 8px;
+}
+.works-list {
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: -30px;
+    margin-bottom: -20px;
+    
+}
+.item-content {
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
+    border-left: 1px solid rgba(238, 238, 238, 1);
+    border-right: 1px solid rgba(238, 238, 238, 1);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.works-item {
+    position: relative;
+    padding-bottom: 20px;
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px;
+}
+.works-title {
     color: var(--dark-font-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    padding-left: 24px;
 }
-.works a {
+.works-link {
     text-decoration: none;
 }
-.works p {
+.works-type {
     font-size: 16px;
     letter-spacing: 0.03em;
     color: var(--light-font-color);
+    padding-left: 24px;
 }
 .works .hidden {
+    display: none;
+    position: absolute;
+    top: 0;
     font-size: 18px;
     line-height: 1.55;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    background-color: var(--brand-color);
+    background: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
 }
+
 /*//////////////////////// footer ///////////////////////////*/
 .footer {
     background-color: var(--footer-bg-color);
-    height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer .address {
     font-weight: 400;
@@ -207,15 +321,21 @@ body {
     letter-spacing: 0.03em;
     color: #FFFFFF;
     font-style: normal;
+    margin-bottom: 9px;
+    margin-top: 20px;
 }
 .footer span {
     color: #ffffff;
 }
 .footer .footer-link {
+    display: block;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+}
+.footer-link-mail {
+    margin-bottom: 9px;
 }
