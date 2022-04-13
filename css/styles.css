@@ -163,14 +163,23 @@ img {
     background-color: #ffffff;
     
 }
-.benefits h2 {
-    display: none;
-
+.visually-hidden { 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    margin: -1px; 
+    border: 0; 
+    padding: 0; 
+    white-space: nowrap; 
+    clip-path: inset(100%); 
+    clip: rect(0 0 0 0); 
+    overflow: hidden; 
+} 
+.benefits-list {
+    margin-right: -30px;
 }
 .benefits .benefits-item {
-    width: 270px;
-}
-.benefits-item:not(:last-child) {
+    width: calc(100% / 4 - 30px);
     margin-right: 30px;
 }
 .benefits .benefits-title {
