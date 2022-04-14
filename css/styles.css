@@ -251,7 +251,8 @@ img {
     letter-spacing: 0.03em;
     color: var(--dark-font-color);
     border: none;
-    height: 38px;
+    /* height: 38px; */
+    padding: 6px 22px;
     cursor: pointer;
     background-color: var(--bg-color);
     border-radius: 5px;
@@ -268,25 +269,25 @@ img {
 .works-tab:not(:last-child) {
     margin-right: 8px;
 }
-.works-list {
-    flex-wrap: wrap;
-    display: flex;
-    margin-left: -30px;
-    margin-bottom: -20px;
-    
-}
+
 .item-content {
     border-bottom: 1px solid rgba(238, 238, 238, 1);
     border-left: 1px solid rgba(238, 238, 238, 1);
     border-right: 1px solid rgba(238, 238, 238, 1);
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding: 20px 24px;
 }
 .works-item {
     position: relative;
-    padding-bottom: 20px;
     width: calc(100% / 3 - 30px);
     margin-left: 30px;
+    margin-bottom: 30px;
+}
+.works-list {
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: -30px;
+    margin-bottom: -30px;
+    
 }
 .works-title {
     color: var(--dark-font-color);
@@ -294,16 +295,16 @@ img {
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
-    padding-left: 24px;
 }
 .works-link {
     text-decoration: none;
 }
 .works-type {
     font-size: 16px;
+    line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--light-font-color);
-    padding-left: 24px;
+    
 }
 .works .hidden {
     display: none;
